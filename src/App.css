@@ -1,0 +1,129 @@
+
+body{
+  background-color: #eeeeee;
+}
+
+div{
+  display: block;
+}
+/* ----------------------------------------preview styles starts--------------------------------------- */
+h1{
+  border-bottom: solid 2px;
+}
+
+h2{
+  border-bottom: solid 1px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 2px;
+}
+
+td,tr,th{
+  border: solid 1px;
+  padding: 1px;
+}
+
+a{
+  text-decoration: underline;
+}
+
+blockquote{
+  border-left: solid 3px;
+  margin-left: 20px;
+  padding: 0;
+  padding-left: 4px;
+}
+
+/* ----------------------------------------preview styles ens 00--------------------------------------- */
+.App {
+  /* text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 30px auto; */
+  margin-top: 20px;
+}
+
+.tool-bar{
+  border-bottom: solid 1px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+}
+
+
+.App-logo{
+  height: 24px;
+  width: 24px;
+  pointer-events: none;
+  grid-column: 1/1;
+
+}
+
+.nav-img {
+  height: 16px;
+  width: 16px;
+  grid-column: 2/2;
+  justify-self: end;
+  margin: 5px;
+  filter: brightness(0) invert(1);
+}
+
+.editor-window{
+  width: 70%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.editor-window{
+  border: solid 1px;
+  border-bottom: none;
+}
+
+.maximized{
+  min-height: 100vh;
+  width: 90%;
+
+}
+
+.editor{
+  border: solid 1px;
+  width: 650px;
+  margin: 18px auto;
+}
+
+.txt-editor{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  min-height: 200px;
+
+}
+
+.preview{
+  text-align: left;
+  border: solid 1px;
+  width: 90%;
+  margin: 18px auto;
+}
+
+#preview{
+  text-align: left;
+  border: solid 1px;
+  width: 90%;
+  margin: 18px auto;
+}
+
+#txt-preview{
+  padding: 5px;
+  overflow-y: auto;
+}
