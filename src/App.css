@@ -1,6 +1,6 @@
 
 body{
-  background-color: #eeeeee;
+  background-color: #cbeaed;
 }
 
 div{
@@ -50,16 +50,27 @@ blockquote{
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   background-color: black;
 }
 
+.desc{
+  grid-column: 1/1;
+  grid-row: 1/1;
+  display: inline-block;
+  justify-self: end;
+  color: white;
+  margin: 0;
+  font-size: 15px;
+  align-self: center;
+}
 
 .App-logo{
   height: 24px;
   width: 24px;
   pointer-events: none;
   grid-column: 1/1;
-
+  grid-row: 1/1;
 }
 
 .nav-img {
@@ -117,6 +128,7 @@ blockquote{
 }
 
 #preview{
+  background-color: #cbeaed;
   text-align: left;
   border: solid 1px;
   width: 90%;

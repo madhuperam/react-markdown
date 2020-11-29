@@ -64,6 +64,7 @@ class App extends React.Component {
               <div className="editor">
                   <div className="tool-bar" >
                     <img src={logo} className="App-logo" alt="react logo" />
+                    <h4 className="desc">Editor</h4>
                     <img src="expand.png" className="nav-img" alt="expand" onClick = {this.expandEditor}/>
                   </div>
                   <textarea name="name" className="txt-editor" rows ="12" onChange={this.expandText} value={this.state.input}>
@@ -72,6 +73,7 @@ class App extends React.Component {
               <div className="preview">
                 <div className="tool-bar">
                   <img src={logo} className="App-logo" alt="react logo" />
+                  <h4 className="desc">Preview</h4>
                   <img src="expand.png" className="nav-img" alt="expand" onClick = {this.expandPreview}/>
                 </div>
                 <div className="txt-preview" dangerouslySetInnerHTML={{ __html: marked(this.state.input, { renderer: renderer })}}></div>
@@ -83,6 +85,7 @@ class App extends React.Component {
               <div className="editor expand" >
                   <div className="tool-bar">
                     <img src={logo} className="App-logo" alt="react logo" />
+                    <h4 className="desc">Editor</h4>
                     <img src="minimize.png" className="nav-img" alt="compress" onClick = {this.expandEditor}/>
                   </div>
                   <textarea name="name" rows="12" className="txt-editor" onChange={this.expandText} value={this.state.input}>
@@ -97,6 +100,7 @@ class App extends React.Component {
               <div className="preview expand">
                 <div className="tool-bar">
                   <img src={logo} className="App-logo" alt="react logo" />
+                  <h4 className="desc">Preview</h4>
                   <img src="minimize.png" className="nav-img" alt="compress" onClick = {this.expandPreview}/>
                 </div>
                 <div className="txt-preview" dangerouslySetInnerHTML={{ __html: marked(this.state.input, { renderer: renderer })}}></div>
